@@ -1,11 +1,346 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noor Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-white bg-white shadow-sm px-4 py-3"
+        aria-label="Offcanvas navbar large navbar-fixed">
+        <div class="container-fluid">
+          <!-- Brand -->
+          <a
+            class="navbar-brand d-flex align-items-center"
+            href="index.html"
+            aria-label="Noor Homes"
+            style="font-size: 30px">
+            <i class="bi bi-buildings me-2 text-primary"></i>
+            Noor Homes
+          </a>
+
+          <!-- Toggle -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar2">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Offcanvas -->
+          <div
+            class="offcanvas offcanvas-end text-bg-light"
+            tabindex="-1"
+            id="offcanvasNavbar2">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title">Noor Homes</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-5">
+                <li class="nav-item nav-active">
+                  <a
+                    class="nav-link active d-flex align-items-center"
+                    href="Home">
+                    <i class="bi bi-house-door me-2"></i> Home
+                  </a>
+                </li>
+
+                <li class="nav-item nav-active">
+                  <a class="nav-link d-flex align-items-center" href="About">
+                    <i class="bi bi-info-circle me-2"></i> About
+                  </a>
+                </li>
+
+                <li class="nav-item nav-active">
+                  <a class="nav-link d-flex align-items-center" href="Listings">
+                    <i class="bi bi-building me-2"></i> Listings
+                  </a>
+                </li>
+
+                <li class="nav-item nav-active">
+                  <a class="nav-link d-flex align-items-center" href="Services">
+                    <i class="bi bi-briefcase me-2"></i> Services
+                  </a>
+                </li>
+
+                <li class="nav-item nav-active">
+                  <a class="nav-link d-flex align-items-center" href="Contact">
+                    <i class="bi bi-envelope me-2"></i> Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <div class="col-lg-7">
+            <h1 class="mb-4">Find Your Dream Home</h1>
+            <p class="mb-4">
+              Discover the perfect property that matches your lifestyle and
+              aspirations with Noor Homes
+            </p>
+            <!-- Search Box -->
+            <div class="search-box d-flex align-items-center">
+              <div class="input-group">
+                <span class="input-group-text bg-white border-0">
+                  <i class="bi bi-geo-alt text-muted"></i>
+                </span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter location, city, or neighborhood" />
+                <button class="btn btn-primary search-btn">
+                  <i class="bi bi-search me-2"></i> Search
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Listings -->
+      <section class="feature-section">
+        <div class="container">
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+              <div class="feature-card">
+                <div class="icon-circle">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <h5>Trusted Service</h5>
+                <p>Over 20 years of trusted real estate expertise</p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+              <div class="feature-card">
+                <div class="icon-circle">
+                  <i class="bi bi-graph-up-arrow"></i>
+                </div>
+                <h5>Best Prices</h5>
+                <p>Competitive pricing and great investment opportunities</p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+              <div class="feature-card">
+                <div class="icon-circle">
+                  <i class="bi bi-people"></i>
+                </div>
+                <h5>Expert Agents</h5>
+                <p>Professional team dedicated to your success</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Property Listings -->
+
+      <section class="property-section">
+        <div class="section-header">
+          <h1>Featured Properties</h1>
+          <p>Explore our hand-picked selection of premium properties</p>
+        </div>
+        <div class="container">
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+              <div class="card property-card shadow-sm">
+                <div class="position-relative">
+                  <img
+                    src="https://hips.hearstapps.com/hmg-prod/images/imagereader-3-1550604185.jpg"
+                    class="card-img-top"
+                    alt="" />
+                  <span class="featured-badge text-white">Featured</span>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="fw-semibold">Modern Luxury Villa</h5>
+
+                  <p class="text-muted mb-2">
+                    <i class="bi bi-geo-alt me-1"></i> Beverly Hills, CA
+                  </p>
+
+                  <p class="text-muted small">
+                    5 Beds &nbsp; • &nbsp; 4 Baths &nbsp; • &nbsp; 4,200 sqft
+                  </p>
+
+                  <hr />
+
+                  <div
+                    class="d-flex justify-content-between align-items-center">
+                    <span class="property-price">$2,450,000</span>
+                    <a href="#" class="view-details"> View Details → </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+              <div class="card property-card shadow-sm">
+                <div class="position-relative">
+                  <img
+                    src="https://i.ytimg.com/vi/sLuLAQifdAA/maxresdefault.jpg"
+                    class="card-img-top"
+                    alt="" />
+                  <span class="featured-badge text-white">Featured</span>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="fw-semibold">Contemporary Apartment</h5>
+
+                  <p class="text-muted mb-2">
+                    <i class="bi bi-geo-alt me-1"></i> Manhattan, NY
+                  </p>
+
+                  <p class="text-muted small">
+                    3 Beds &nbsp; • &nbsp; 2 Baths &nbsp; • &nbsp; 2,100 sqft
+                  </p>
+
+                  <hr />
+
+                  <div
+                    class="d-flex justify-content-between align-items-center">
+                    <span class="property-price">$1,850,000</span>
+                    <a href="#" class="view-details"> View Details → </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+              <div class="card property-card shadow-sm">
+                <div class="position-relative">
+                  <img
+                    src="https://luxhabitat.ae/resizedimages/1920w/16747/source/04e238087a810e7934d59b5b690d482ce5b82ca3683d50adb53f8b99a1257945.jpg"
+                    class="card-img-top"
+                    alt="" />
+                  <span class="featured-badge text-white">Featured</span>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="fw-semibold">Downtown Penthouse</h5>
+
+                  <p class="text-muted mb-2">
+                    <i class="bi bi-geo-alt me-1"></i> Miami, FL
+                  </p>
+
+                  <p class="text-muted small">
+                    4 Beds &nbsp; • &nbsp; 3 Baths &nbsp; • &nbsp; 3,500 sqft
+                  </p>
+
+                  <hr />
+
+                  <div
+                    class="d-flex justify-content-between align-items-center">
+                    <span class="property-price">$3,200,000</span>
+                    <a href="#" class="view-details"> View Details → </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- View All Button -->
+          <div class="text-center mt-5">
+            <a href="#" class="btn btn-primary view-all-btn">
+              View All Listings
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section">
+        <h1>Ready to Find Your Perfect Home?</h1>
+        <p>
+          Let our expert team guide you through every step of your real estate
+          journey
+        </p>
+        <div class="contact-buttons">
+          <a href="#" class="btn btn-primary">Contact Us</a>
+          <a href="#" class="btn btn-outline">Browse Listings</a>
+        </div>
+      </section>
+    </main>
+    <!--footer section-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- Brand -->
+          <div class="col-md-3 mb-4">
+            <h5><i class="bi bi-building brand-icon"></i> Noor Homes</h5>
+            <p>Your trusted partner in finding the perfect home.</p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-3 mb-4">
+            <h5>Quick Links</h5>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Listings</a>
+          </div>
+
+          <!-- Services -->
+          <div class="col-md-3 mb-4">
+            <h5>Services</h5>
+            <a href="#">Property Sales</a>
+            <a href="#">Property Rentals</a>
+            <a href="#">Property Management</a>
+            <a href="#">Consultation</a>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-md-3 mb-4">
+            <h5>Contact</h5>
+            <p>Email: info@noorhomes.com</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Address: 123 Main St, City, State</p>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="footer-divider"></div>
+
+        <!-- Bottom -->
+        <div class="footer-bottom">© 2026 Noor Homes. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+  </body>
 </html>
